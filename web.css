@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'MiFuenteAccesorios';
+    src: url('fonts/Anonymous_Pro.ttf'); 
+}
+
+@font-face {
+    font-family: 'MiMrDafoe';
+    src: url('fonts/MrDafoe-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #3A807A;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+header{
+    background-color: #D9D9D9;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+h2 {
+    font-family: 'MiFuenteAccesorios';
+    letter-spacing: 2px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.inicio {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+p {
+    font-family: 'MiFuenteAccesorios';
+    letter-spacing: 2px;
+}
+
+section {
+    border-style: groove;
+    border-color: #2D9DA0;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+nav{
+    display: flex; 
+    align-items: center; 
+    gap: 35px;
+    position: absolute;
+    top: 20%;
+    right: 20px; 
+    transform: translateY(-50%);
+    padding: 0;
+}
+
+.grupo-derecha {
+    margin-left: auto; 
+    display: flex;
+    gap: 10px;
+}
+
+.contenedor-titulo {
+    position: relative;
+    display: inline-block; 
+    padding: 20px;
+    background-color: #D9D9D9; 
+    text-align: center;
+}
+
+.titulo-principal {
+    font-family: 'MiMrDafoe'; 
+    font-size: 110px;
+    color: #05374C;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+    display: inline-block;
+    animation: entradaSuave 1.5s ease-out forwards;
+}
+
+.subtitulo {
+    font-family: 'MiFuenteAccesorios';
+    font-size: 27px;
+    color: #2D9DA0; 
+    position: absolute;
+    top: 20px;     
+    left: 120px;    
+    letter-spacing: 2px;
+    display: inline-block;
+    animation: entradaVibrante 1.5s ease-out forwards;
+}
+
+@keyframes entradaSuave {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Empieza un poco más abajo */
+  }
+  70% {
+    transform: translateY(-5px); /* Sube un poquito más de su lugar */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);    /* Se queda en su posición original */
+  }
+}
+
+@keyframes entradaVibrante {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Empieza pequeño */
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1); /* Se agranda un poco */
+  }
+  60% { transform: rotate(2deg); }  /* Vibra a un lado */
+  70% { transform: rotate(-2deg); } /* Vibra al otro */
+  80% { transform: rotate(1deg); }  /* Se va calmando */
+  90% { transform: rotate(-1deg); }
+  100% {
+    transform: scale(1) rotate(0deg); /* Queda en su sitio */
+  }
+}
+
+.diseno-carrito {
+    width: 23px; 
+    height: 25px;
+    stroke: #05374C;
+    fill: #05374C;
+    stroke-width:2;
+}
+
+.menu-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    background-color: #3A807A;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    z-index: 100;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu-links.activo {
+    display: flex;
+}
+
+.menu-links .boton-nav {
+    width: 150px;
+    margin-left: 0;
+}
+
+
+.icon-menu {
+    width: 24px;      
+    height: 19px;     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.icon-menu span {
+    display: block;
+    width: 100%;
+    height: 5px;      
+    background-color: #05374C; 
+    border-radius: 5px;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta-producto {
+    background-color: #D9D9D9;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-producto img {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-producto p {
+    color: #05374C;
+    margin: 10px 0 5px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #2D9DA0;
+}
+
+.boton-nav {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100px;  
+    height: 30px;  
+    background-color: #D9D9D9;
+    border-style: solid;
+    border-color: #2d9ca05e;
+    border-radius: 15px;
+    color: #05374C;  
+    text-decoration: none; 
+    text-align: center;    
+    font-family: 'MiFuenteAccesorios';
+    font-size: 14px;
+    border-radius: 4px;  
+    transition: background 0.3s; 
+    margin-left: 5px;
+}
+
+.boton-nav:hover {
+    background-color: #2D9DA0; 
+    color: white;
+}
+
+.btn-agregar {
+    background-color: #05374C;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'MiFuenteAccesorios';
+}
+
+.btn-agregar:hover {
+    background-color: #2D9DA0;
+}

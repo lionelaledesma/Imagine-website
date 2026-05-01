@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <title>Productos</title>
+</head>
+<body>
+    <header>
+        <!--BOTONES DE NAVEGACIÓN-->
+        <nav>
+            <!--<a href="web.html" class="boton-nav">INICIO</a>
+            <a href="catalogo.html" class="boton-nav">Catalogo</a>
+            <a class="boton-nav">dot</a>-->
+            <div class="grupo-derecha">
+               <div class="boton-nav">
+                    <a href="carrito.html">
+                        <svg viewBox="0 0 24 24" class="diseno-carrito">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </a>
+               </div>
+               <div class="boton-nav" id="btn-menu">
+                    <div class="icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+               </div>
+               <div class="menu-links" id="menu-links">
+                  <a href="index.html" class="boton-nav">INICIO</a>
+                  <a href="catalogo.html" class="boton-nav">Catalogo</a>
+                  <a href="carrito.html" class="boton-nav">Carrito</a>
+               </div>
+            </div>
+         </nav>
+         <!-- ENCABEZADO -->
+         <div class="contenedor-titulo">
+            <span class="subtitulo">Accesorios</span>
+            <h1 class="titulo-principal">Imagine.</h1>
+         </div>
+      </header>
+    <!-- CATALOGO DE PRODUCTOS -->
+    <section class="contenedor-productos">
+        <div class="tarjeta-producto">
+            <img src="fotos/foto1.jpg" alt="Collar Astral">
+            <p>Collar Astral</p>
+            <span class="precio" data-precio="2500">$2.500</span>
+            <!-- Botón agregado -->
+            <button class="btn-agregar" data-id="1" data-nombre="Collar Astral" data-precio="2500">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="tarjeta-producto">
+            <img src="fotos/foto1.jpg" alt="Accesorio 2">
+            <p>Pulsera Serena</p>
+            <span class="precio" data-precio="1800">$1.800</span>
+            <button class="btn-agregar" data-id="2" data-nombre="Pulsera Serena" data-precio="1800">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="tarjeta-producto">
+            <img src="fotos/foto1.jpg" alt="Accesorio 3">
+            <p>Aros Luna</p>
+            <span class="precio" data-precio="1500">$1.500</span>
+            <button class="btn-agregar" data-id="3" data-nombre="Aros Luna" data-precio="1500">
+                Agregar al carrito
+            </button>
+        </div>
+    </section>
+
+    <script src="web.js"></script>
+</body>
+</html>
