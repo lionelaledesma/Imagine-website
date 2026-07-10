@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorá nuestro catálogo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="web.css">
+    <title>Catálogo</title>
+</head>
+<body>
+    <header>
+        <!-- ENCABEZADO -->
+        <div class="contenedor-titulo">
+            <p class="subtitulo">Accesorios</p>
+            <h1 class="titulo-principal">Imagine.</h1>
+            <img src="fotos/Imagine.png" alt="Imagine Accesorios" class="logo">
+        </div>
+        <!--BOTONES DE NAVEGACIÓN-->
+        <nav>
+            <div class="grupo-nav">
+                <div class="btn-menu">
+                    <button class="icon-menu" id="icon-menu" aria-label="Abrir menú">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="menu-links" id="menu-links">
+                    <a href="index.html" class="boton-nav">Inicio</a>
+                    <a href="catalogo.html" class="boton-nav">Catálogo</a>
+                </div>
+                <div class="boton-nav" id="boton-nav-carrito">
+                    <a href="carrito.html" class="boton-carrito">
+                        <span class="texto-carrito">Carrito</span>
+                        <svg viewBox="0 0 24 24" class="diseno-carrito">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="contador-carrito" id="contador-carrito">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sec-descripcion" id="nav-catalogo">
+            <div class="catalogo-head">
+                <h2>¿Qué estás buscando?</h2>
+                <p id="sub-cat">Tenemos todo lo que buscas</p>
+            </div>
+            <div class="catalogo-menu">
+                <a href="#pulseras">Pulseras</a>
+                <a href="#collares">Collares</a>
+                <a href="#anillos">Anillos</a>
+                <a href="#otros">Otros</a>
+            </div>
+        </section>
+        <!-- CATALOGO DE PRODUCTOS -->
+        <!-- SECCIÓN PRINCIPAL DEL CATÁLOGO -->
+        <section class="contenedor-general-catalogo">
+            <!-- CATEGORÍA: PULSERAS -->
+            <div id="pulseras" class="categoria-bloque">
+                <h2 class="titulo-categoria">Pulseras</h2>
+                <div class="contenedor-productos">
+                    <!-- Coloca aquí tus tarjetas de pulseras -->
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Pulsera Serena" id="img-prod">
+                                <h3>Pulsera Serena</h3>
+                                <span class="precio" data-precio="1800">$1.800</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="2" data-nombre="Pulsera Serena" data-precio="1800">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Pulsera Serena">
+                                <h3>Pulsera Serena</h3>
+                                <span class="precio" data-precio="1800">$1.800</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="2" data-nombre="Pulsera Serena" data-precio="1800">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Pulsera Serena">
+                                <h3>Pulsera Serena</h3>
+                                <span class="precio" data-precio="1800">$1.800</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="2" data-nombre="Pulsera Serena" data-precio="1800">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Pulsera Serena">
+                                <h3>Pulsera Serena</h3>
+                                <span class="precio" data-precio="1800">$1.800</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="2" data-nombre="Pulsera Serena" data-precio="1800">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Pulsera Serena">
+                                <h3>Pulsera Serena</h3>
+                                <span class="precio" data-precio="1800">$1.800</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="2" data-nombre="Pulsera Serena" data-precio="1800">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                </div>
+            </div>
+            <!-- CATEGORÍA: COLLARES -->
+            <div id="collares" class="categoria-bloque">
+                <h2 class="titulo-categoria">Collares</h2>
+                <div class="contenedor-productos">
+                    <!-- Coloca aquí tus tarjetas de collares -->
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Collar Astral">
+                                <h3>Collar Astral</h3>
+                                <span class="precio" data-precio="2500">$2.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="1" data-nombre="Collar Astral" data-precio="2500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Collar Astral">
+                                <h3>Collar Astral</h3>
+                                <span class="precio" data-precio="2500">$2.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="1" data-nombre="Collar Astral" data-precio="2500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Collar Astral">
+                                <h3>Collar Astral</h3>
+                                <span class="precio" data-precio="2500">$2.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="1" data-nombre="Collar Astral" data-precio="2500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Collar Astral">
+                                <h3>Collar Astral</h3>
+                                <span class="precio" data-precio="2500">$2.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="1" data-nombre="Collar Astral" data-precio="2500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                </div>
+            </div>
+            <!-- CATEGORÍA: ANILLOS -->
+            <div id="anillos" class="categoria-bloque">
+                <h2 class="titulo-categoria">Anillos</h2>
+                <div class="contenedor-productos">
+                    <!-- Coloca aquí tus tarjetas de anillos -->
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Aros Luna">
+                                <h3>Aros Luna</h3>
+                                <span class="precio" data-precio="1500">$1.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="3" data-nombre="Aros Luna" data-precio="1500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Aros Luna">
+                                <h3>Aros Luna</h3>
+                                <span class="precio" data-precio="1500">$1.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="3" data-nombre="Aros Luna" data-precio="1500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Aros Luna">
+                                <h3>Aros Luna</h3>
+                                <span class="precio" data-precio="1500">$1.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="3" data-nombre="Aros Luna" data-precio="1500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Aros Luna">
+                                <h3>Aros Luna</h3>
+                                <span class="precio" data-precio="1500">$1.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="3" data-nombre="Aros Luna" data-precio="1500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Aros Luna">
+                                <h3>Aros Luna</h3>
+                                <span class="precio" data-precio="1500">$1.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="3" data-nombre="Aros Luna" data-precio="1500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                </div>
+            </div>
+            <!-- CATEGORÍA: OTROS -->
+            <div id="otros" class="categoria-bloque">
+                <h2 class="titulo-categoria">Más</h2>
+                <div class="contenedor-productos">
+                    <!-- Coloca aquí el resto de tus productos -->
+                     <article class="tarjeta-producto">
+                        <div class="content-tarjeta">
+                            <div class="contenedor-foto">
+                                <img src="fotos/foto1.jpg" alt="Aros Luna">
+                                <h3>Aros Luna</h3>
+                                <span class="precio" data-precio="1500">$1.500</span>
+                            </div>
+                            <div class="descripcion-prod">
+                                <p>Esta pulsera esta hecha con tanza elastica, bolitas de plastico Nº6 y Nº4, 
+                                con dije de plastico de delfin.</p>
+                            </div>
+                        </div>
+                        <button class="btn-agregar" data-id="3" data-nombre="Aros Luna" data-precio="1500">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <footer>
+        <p>&copy; 2026 - Lionela Ledesma</p>
+    </footer>
+    <script src="web.js"></script>
+</body>
+</html>
