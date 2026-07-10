@@ -3,93 +3,135 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta name="description" content="Accesorios Imagine - Diseños artesanales únicos en hilo chino, macramé y porcelana fría. Resaltá tu esencia natural.">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="web.css">
-      <title>Imagine</title>
+      <title>Accesorios Imagine</title>
    </head>
-    
    <body>
       <header>
+         <!-- ENCABEZADO -->
+         <div class="contenedor-titulo">
+            <p class="subtitulo">Accesorios</p>
+            <h1 class="titulo-principal">Imagine.</h1>
+            <img src="fotos/Imagine.png" alt="Imagine Accesorios" class="logo">
+         </div>
          <!--BOTONES DE NAVEGACIÓN-->
          <nav>
-            <!--<a href="web.html" class="boton-nav">INICIO</a>
-            <a href="catalogo.html" class="boton-nav">Catalogo</a>
-            <a class="boton-nav">dot</a>-->
-            <div class="grupo-derecha">
-               <div class="boton-nav">
-                  <a href="carrito.html">
+            <div class="grupo-nav">
+               <div class="btn-menu">
+                  <button class="icon-menu" id="icon-menu" aria-label="Abrir menú">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </button>
+               </div>
+               <div class="menu-links" id="menu-links">
+                  <a href="index.html" class="boton-nav">Inicio</a>
+                  <a href="catalogo.html" class="boton-nav">Catálogo</a>
+               </div>
+               <div class="boton-nav" id="boton-nav-carrito">
+                  <a href="carrito.html" class="boton-carrito">
+                     <span class="texto-carrito">Carrito</span>
                      <svg viewBox="0 0 24 24" class="diseno-carrito">
                         <circle cx="9" cy="21" r="1"></circle>
                         <circle cx="20" cy="21" r="1"></circle>
                         <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                      </svg>
+                     <span class="contador-carrito" id="contador-carrito">0</span>
                   </a>
-               </div>
-               <div class="boton-nav" id="btn-menu">
-                  <div class="icon-menu">
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                  </div>
-               </div>
-               <div class="menu-links" id="menu-links">
-                  <a href="index.html" class="boton-nav">INICIO</a>
-                  <a href="catalogo.html" class="boton-nav">Catalogo</a>
-                  <a href="carrito.html" class="boton-nav">Carrito</a>
                </div>
             </div>
          </nav>
-         <!-- ENCABEZADO -->
-         <div class="contenedor-titulo">
-            <span class="subtitulo">Accesorios</span>
-            <h1 class="titulo-principal">Imagine.</h1>
-         </div>
       </header>
       <!-- INICIO -->
-      <h2 class="inicio">
-         Somos un emprendimiento donde diseñamos piezas únicas para acompañar tu estilo. Creamos 
-         accesorios que cuentan historias y resaltan tu esencia natural
-      </h2>
+      <main>
+         <section class="hero">
+            <div class="contenido-hero">
+               <h2>Accesorios que resaltan tu esencia</h2>
+               <p class="hero-texto">
+                  Somos un emprendimiento donde diseñamos piezas únicas para acompañar tu estilo. Creamos 
+                  accesorios que cuentan historias y resaltan tu esencia natural.
+               </p>
+               <a href="catalogo.html" class="btn-cta">Explorar Catálogo</a>
+            </div>
+         </section>
 
-      <!-- CATALOGO DE PRODUCTOS -->
-      <section>
-         <h2>
-            Productos
-         </h2>
-         <p>
-            Explorá nuestra colección de collares, pulseras y aros hechos a mano. Cada pieza es una 
-            combinación de diseño contemporáneo y detalles cuidadosamente seleccionados.
-         </p>
-      </section>
+         <!-- CATALOGO DE PRODUCTOS -->
+         <section class="sec-descripcion">
+            <h2>
+               Productos
+            </h2>
+            <p>
+               Explorá nuestra colección de collares, pulseras, anillos y aros hechos a mano. Cada pieza es una combinación de diseño 
+               contemporáneo y detalles cuidadosamente seleccionados. Combinamos técnicas artesanales que van desde 
+               el delicado tejido en hilo chino y macramé, hasta el modelado exclusivo en porcelana fría. Trabajamos con materiales 
+               seleccionados como cristales, perlas de río y alambre de calidad premium (AAA). También sumamos opciones en acero quirúrgico. 
+               Al ser un proceso artesanal, te asegurás de llevar un accesorio único y lleno de dedicación.
+            </p>
+            <h3>¿Por qué elegirnos?</h3>
+            <ul>
+               <li><strong>Diseño 100% Artesanal:</strong> Cada pieza es única, modelada a mano en porcelana fría o tejida en macramé y hilo chino.</li>
+               <li><strong>Materiales:</strong> Trabajamos con cristales, perlas de río seleccionadas y alambre de calidad AAA.</li>
+               <li><strong>Línea Hipoalergénica:</strong> Contamos con opciones en acero quirúrgico ideales para cuidar tu piel.</li>
+               <li><strong>Dedicación Exclusiva:</strong> Al no ser producción en serie, te asegurás un accesorio con terminaciones cuidadas y llenas de amor.</li>
+            </ul>
+         </section>
 
-      <!-- CUIDADO DE PRODUCTOS -->
-      <section>
-         <h2>
-            Cuidado
-         </h2>
-         <p>
-            Para que tus accesorios luzcan siempre como nuevos, evitá el contacto con perfumes o agua. 
-            Guardalos en un lugar seco y protegidos de la luz directa cuando no los uses.
-         </p>
-      </section>
+         <!-- CUIDADO DE PRODUCTOS -->
+         <section class="sec-descripcion">
+            <h2>
+               Cuidado
+            </h2>
+            <p>
+               Para que tus accesorios luzcan siempre como nuevos, evitá por completo el contacto con perfumes, cremas, agua o productos de limpieza. 
+               Te aconsejamos que tus joyas sean lo último que te pongas al vestirte. Nuestros accesorios son sensibles a 
+               la humedad, por lo que no debes usarlos en la ducha, el mar o la pileta. Guardá cada pieza de forma individual en un lugar seco y 
+               protegido de la luz directa para evitar que se enreden o se rayen. Para limpiar tus piezas, usá únicamente un paño seco y suave, sin 
+               frotar con fuerza.
+            </p>
+         </section>
 
-      <!-- CONTACTO -->
-      <section>
-         <h2>
-            Contacto
-         </h2>
-         <p>
-            ¿Tenés alguna duda o buscás algo personalizado? Escribinos por 
-            <a href="tel:1154079549">WhatsApp</a> o 
-            <a href="https://www.instagram.com/accesorios_imagine_?igsh=MXJyMXV1Mnh0bWJwZA==" 
-               target="_blank"> Instagram.</a> 
-            ¡Estamos para ayudarte a encontrar tu accesorio ideal!
-         </p>
-      </section>
+         <!-- CONTACTO -->
+         <section class="sec-descripcion" id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tenés alguna duda o buscás algo personalizado?</p>
+            <p>Contactanos a través del siguiente formulario:</p>
+   
+            <form id="formulario-contacto" class="form-contacto">
+               <div class="grupo-campo">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+               </div>
+               <div class="grupo-campo">
+                  <label for="email">Correo Electrónico:</label>
+                  <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+               </div>
+               <div class="grupo-campo">
+                  <label for="mensaje">Mensaje:</label>
+               <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta acá..." rows="4" required></textarea>
+               </div>
+               <div class="btn-contacto">
+                  <button type="submit">Enviar Mensaje</button>
+               </div>
+            </form>
+   
+            <!-- Contenedor del mensaje de confirmación requerido -->
+            <div id="mensaje-confirmacion" class="mensaje-oculto"></div>
+
+            <div class="redes-adicionales">
+               <p>O encontranos en nuestras redes:</p>
+               <a href="https://wa.link/8gpjek" target="_blank" rel="noopener noreferrer">WhatsApp</a> 
+               <a href="https://www.instagram.com/accesorios_imagine_?igsh=MXJyMXV1Mnh0bWJwZA==" target="_blank">Instagram</a> 
+            </div>
+         </section>
+      </main>
       <br>
       <footer>
-         &copy; 2026 - Lionela Ledesma 
+         <p>&copy; 2026 - Lionela Ledesma</p>
       </footer>
       <script src="web.js"></script>
-
    </body>
 </html>
