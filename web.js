@@ -115,7 +115,7 @@ if (listaCarrito) {
             if (totalCarrito) {
                 totalCarrito.innerHTML = `<h3 class="tx-total-carrito">Total: $${total}</h3>`;
             }
-            //Acciones de vaciar carrito y finalizar la compra -- nota: tambien agregar para cancelar compra
+            //Acciones de vaciar carrito y finalizar la compra -- nota para mi: tambien agregar para cancelar compra
             if (accionesCarrito) {
                 accionesCarrito.innerHTML = `
                     <button id="vaciar-carrito" class="boton-nav">Vaciar Carrito</button>
